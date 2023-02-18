@@ -2,6 +2,7 @@ import './App.css';
 import { useState, useEffect } from "react";
 import "./styles.css";
 import {Pokemon} from './components/Pokemon';
+import {Footer} from './components/Footer';
 
 function App() {
   const [pokemonData, setPokemonData] = useState([]);
@@ -24,9 +25,7 @@ function App() {
           </div>
         ))}
       </div>
-      <footer className="bg-success text-center py-4 shadow-sm mt-5">
-        <p className="small text-dark m-0">Copyright &copy; 2022 Rodcel Isaac Macalinao</p>
-      </footer>
+      <Footer/>
     </>
   );
 }
